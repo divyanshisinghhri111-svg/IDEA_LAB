@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Style for the big heading */
+h1 {
+  font-size: 24px;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin: 12px 0 4px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f8fafc;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  background: white;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin: 6px 0;
+}
+
+.gender-options input {
+  accent-color: #10b981;
+}
+
+label.radio-label {
+  font-weight: normal;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: #10b981;
+  color: white;
+}
+
+button[type="reset"] {
+  background: #e2e8f0;
+  color: #475569;
+}
