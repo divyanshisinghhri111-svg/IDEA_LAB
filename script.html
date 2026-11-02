@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="divu.css">
+</head>
+<body>
+
+    <!-- Navigation Header Block -->
+    <header id="top">
+        <div class="brand-info">
+            <h1>Divyanshi Singh</h1>
+            <p><span>📧divyanshisinghhri111@gmail.com</span> <span>📞 +1-234-567-890</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="about-container">
+                <img src="https://placeholder.com" alt= "Divyanshi Singh Profile Picture" class="profile-img">
+                <div class="about-text">
+                    <h2>Hi, I'm Divyanshi Singh !</h2>
+                    <p>I am a Full Stack Developer with 2 years of experience in both application and presentation layers. I have worked on web applications and microservices deployed on IBM Cloud, and am an avid user of IBM Watson Services. I have also worked on Watson Assistant NLU, Sentiment Analyzer to name a few.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>Chatbot</h3>
+                    <ul>
+                        <li>Developed a secure website integrated with a chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analyzer</h3>
+                    <ul>
+                        <li>Developed and deployed a sentiment analyzer for the book reviews section of an eCommerce platform using IBM NLU.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Fashion Website</h3>
+                    <ul>
+                        <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://jsdelivr.net" alt="HTML logo">
+                    <h4>HTML</h4>
+                    <p>4 years experience</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://jsdelivr.net" alt="JavaScript logo">
+                    <h4>JavaScript</h4>
+                    <p>3 years experience</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://jsdelivr.net" alt="CSS logo">
+                    <h4>CSS</h4>
+                    <p>4 years experience</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://jsdelivr.net" alt="Node.js logo">
+                    <h4>Node.js</h4>
+                    <p>4 years experience</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://jsdelivr.net" alt="React logo">
+                    <h4>React</h4>
+                    <p>4 years experience</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations">
+            <h2 class="section-title">Recommendations</h2>
+            
+            <div class="recommendations-grid" id="recommendationsContainer">
+                <div class="recommendation-card">
+                    "John is a very quick learner and quickly grasps key concepts of web development. He got a great attitude & he is an excellent team player. He has a curious mind and asks the right question. He takes initiative within a team and has potentials to lead the team."
+                </div>
+                <div class="recommendation-card">
+                    "Working with John has been an awesome experience. He is highly knowledgeable and always goes the extra mile to make sure everything is right. For any future projects that need his expertise I would definitely want to work with her again."
+                </div>
+                <div class="recommendation-card">
+                    "I had worked along with John during the initial phase of our venture which needed web development. She is a committed resource who has in depth knowledge about the domain. She will be an asset for any organisation!"
+                </div>
+            </div>
+
+            <!-- Recommendation Form Container -->
+            <div class="recommendation-form-box">
+                <h3>Leave a Recommendation</h3>
+                <form id="recommendationForm">
+                    <div class="form-group">
+                        <input type="text" id="recName" placeholder="Name (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="recText" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <a href="#top" class="home-icon-btn" title="Back to Top">↑</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Popup Alert Box -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <p>Thanks for leaving a recommendation!</p>
+            <button class="popup-close-btn" id="closePopupBtn">Ok</button>
+        </div>
+    </div>
+
+    <!-- Linking the external Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
